@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nike-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="memberform.html">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </div>
+        </div>
+       
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+<!-- Header Section Begin -->
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7">
+                    <div class="header__top__left">
+                        <p>Free shipping, 30-day return or refund guarantee.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5">
+                    <div class="header__top__right">
+                        <div class="header__top__links">
+                            <a href="memberform.html">Sign in</a>
+                            <a href="#">FAQs</a>
+                        </div>
+                        <div class="header__top__hover">
+                            <span>Usd <i class="arrow_carrot-down"></i></span>
+                            <ul>
+                                <li>USD</li>
+                                <li>EUR</li>
+                                <li>INR</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="data:image/png;base64,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" alt="" style="margin-left:2px; "  height="40px" width="110px"></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <nav class="header__menu mobile-menu">
+                    <ul>
+                        <li ><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="./shop.html">Shop</a></li>
+                       
+                        
+                        <li><a href="./contact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="header__nav__option">
+                    <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                    <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                    <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                    <div class="price">$0.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+    </div>
+</header>
+<!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shop</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Shop Section Begin -->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="shop__sidebar">
+                        <div class="shop__sidebar__search">
+                            <form action="#">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><span class="icon_search"></span></button>
+                            </form>
+                        </div>
+                        <div class="shop__sidebar__accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseOne">Categories</a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__categories">
+                                                <ul class="nice-scroll">
+                                                    <li><a href="#">Men (5)</a></li>
+                                                    <li><a href="#">Women (5)</a></li>
+                                                    <li><a href="#">Clothing (4)</a></li>
+                                                    <li><a href="#">Shoes (6)</a></li>
+                                                    <li><a href="#">Accessories (2)</a></li>
+                                                    <li><a href="#">Kids (2)</a></li>
+                                            
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseTwo">NIKE</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__brand">
+                                                <ul>
+                                                    <li><a href="#">Air Jordan</a></li>
+                                                    <li><a href="#">Jordan Flight</a></li>
+                                                    <li><a href="#">ZoomX</a></li>
+                                                    <li><a href="#">Jordan Heritage</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__price">
+                                                <ul>
+                                                    <li><a href="#">$0.00 - $50.00</a></li>
+                                                    <li><a href="#">$50.00 - $100.00</a></li>
+                                                    <li><a href="#">$100.00 - $150.00</a></li>
+                                                    <li><a href="#">$150.00 - $200.00</a></li>
+                                                    <li><a href="#">$200.00+</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFour">Size</a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__size">
+                                                <label for="xs">xs
+                                                    <input type="radio" id="xs">
+                                                </label>
+                                                <label for="sm">s
+                                                    <input type="radio" id="sm">
+                                                </label>
+                                                <label for="md">m
+                                                    <input type="radio" id="md">
+                                                </label>
+                                                <label for="xl">xl
+                                                    <input type="radio" id="xl">
+                                                </label>
+                                                
+                                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFive">Colors</a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__color">
+                                                <label class="c-1" for="sp-1">
+                                                    <input type="radio" id="sp-1">
+                                                </label>
+                                                <label class="c-2" for="sp-2">
+                                                    <input type="radio" id="sp-2">
+                                                </label>
+                                                <label class="c-3" for="sp-3">
+                                                    <input type="radio" id="sp-3">
+                                                </label>
+                                                <label class="c-4" for="sp-4">
+                                                    <input type="radio" id="sp-4">
+                                                </label>
+                                                <label class="c-5" for="sp-5">
+                                                    <input type="radio" id="sp-5">
+                                                </label>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseSix">Tags</a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__tags">
+                                            
+                                                <a href="#">Bags</a>
+                                                <a href="#">Shoes</a>
+                                              
+                                                <a href="#">Clothing</a>
+                                                <a href="#">Hats</a>
+                                                <a href="#">Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="shop__product__option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__left">
+                                    <p>Showing 1–12 of 126 results</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__right">
+                                    <p>Sort by Price:</p>
+                                    <select>
+                                        <option value="">Low To High</option>
+                                        <option value="">$0 - $55</option>
+                                        <option value="">$55 - $100</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a42a5d53-2f99-4e78-a081-9d07a2d0774a/air-force-1-07-shoe-pXTXQ8.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nike Air Force 1 '07</h6>
+                                    <a href="./shop-details-airforce.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$101.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-4">
+                                            <input type="radio" id="pc-4">
+                                        </label>
+                                        <label class="active black" for="pc-5">
+                                            <input type="radio" id="pc-5">
+                                        </label>
+                                        <label class="grey" for="pc-6">
+                                            <input type="radio" id="pc-6">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_462,c_limit/310d04b6-1689-4dbf-92b7-03c6dc85374f/air-jordan-legacy-312-low-shoe-LDgzC2.png">
+                                    <span class="label">Sale</span>
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Air Jordan Legacy 312 Low</h6>
+                                    <a href="./shop-details-legacy.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$167.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-7">
+                                            <input type="radio" id="pc-7">
+                                        </label>
+                                        <label class="active black" for="pc-8">
+                                            <input type="radio" id="pc-8">
+                                        </label>
+                                        <label class="grey" for="pc-9">
+                                            <input type="radio" id="pc-9">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3cc67bbc-9d4f-47b0-8268-fcbe34df4c41/air-jordan-1-mid-shoes-QJTvQh.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Air Jordan 1 Mid</h6>
+                                    <a href="./shop-details-legacy.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$243.48</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-10">
+                                            <input type="radio" id="pc-10">
+                                        </label>
+                                        <label class="active black" for="pc-11">
+                                            <input type="radio" id="pc-11">
+                                        </label>
+                                        <label class="grey" for="pc-12">
+                                            <input type="radio" id="pc-12">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fc1355a6-5887-4e6d-a844-f168adbe9044/jordan-1-ko-shoes-WvdHSk.png">
+                                    <span class="label">Sale</span>
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Jordan 1 KOs</h6>
+                                    <a href="./shop-details-legacy.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$260.9</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-16">
+                                            <input type="radio" id="pc-16">
+                                        </label>
+                                        <label class="active black" for="pc-17">
+                                            <input type="radio" id="pc-17">
+                                        </label>
+                                        <label class="grey" for="pc-18">
+                                            <input type="radio" id="pc-18">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0e683a6a-6eb2-41b5-9ee1-15c41f3e3a2e/jordan-flight-heritage-top-s0MjTQ.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Jordan Flight Heritage</h6>
+                                    <a href="./shop-details-jordanfilghtmvp.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$82.37</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-19">
+                                            <input type="radio" id="pc-19">
+                                        </label>
+                                        <label class="active black" for="pc-20">
+                                            <input type="radio" id="pc-20">
+                                        </label>
+                                        <label class="grey" for="pc-21">
+                                            <input type="radio" id="pc-21">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_467,c_limit/46d5092a-e80f-4fc5-8c28-bd5c98ac26c4/zoomx-invincible-run-flyknit-2-road-running-shoes-l9cZ2p.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nike ZoomX Invincible Run Flyknit 2</h6>
+                                    <a href="./shop-details-zoomx.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$178.49</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-22">
+                                            <input type="radio" id="pc-22">
+                                        </label>
+                                        <label class="active black" for="pc-23">
+                                            <input type="radio" id="pc-23">
+                                        </label>
+                                        <label class="grey" for="pc-24">
+                                            <input type="radio" id="pc-24">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a737bdc5-9392-420b-a24e-cdd34d75365d/heritage-backpack-ndMcpP.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nike Heritage
+                                        Backpack (25L)</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$46.66</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-25">
+                                            <input type="radio" id="pc-25">
+                                        </label>
+                                        <label class="active black" for="pc-26">
+                                            <input type="radio" id="pc-26">
+                                        </label>
+                                        <label class="grey" for="pc-27">
+                                            <input type="radio" id="pc-27">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-10.jpg">
+                                    <span class="label">Sale</span>
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nike Perfumes</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$43.48</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-28">
+                                            <input type="radio" id="pc-28">
+                                        </label>
+                                        <label class="active black" for="pc-29">
+                                            <input type="radio" id="pc-29">
+                                        </label>
+                                        <label class="grey" for="pc-30">
+                                            <input type="radio" id="pc-30">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f5451bf1-a7d5-47f1-94cb-2f6ffefae65b/jordan-flight-mvp-85-statement-t-shirt-vX9h58.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Jordan Flight MVP 85</h6>
+                                    <a href="./shop-details-jordanfilghtmvp.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$45.28</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-31">
+                                            <input type="radio" id="pc-31">
+                                        </label>
+                                        <label class="active black" for="pc-32">
+                                            <input type="radio" id="pc-32">
+                                        </label>
+                                        <label class="grey" for="pc-33">
+                                            <input type="radio" id="pc-33">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-12.jpg">
+                                    <span class="label">Sale</span>
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nike Waterproof Jacket</h6>
+                                    <a href="./shop-details-anorak.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$98.49</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-34">
+                                            <input type="radio" id="pc-34">
+                                        </label>
+                                        <label class="active black" for="pc-35">
+                                            <input type="radio" id="pc-35">
+                                        </label>
+                                        <label class="grey" for="pc-36">
+                                            <input type="radio" id="pc-36">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/733e9dba-0e55-4a6b-9994-33679e30a21c/sportswear-heritage-86-adjustable-cap-cX9wzp.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nike Sportswear Heritage 86</h6>
+                                    <a href="./shop-details-dri-fit-trousers.html" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$17.66</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-37">
+                                            <input type="radio" id="pc-37">
+                                        </label>
+                                        <label class="active black" for="pc-38">
+                                            <input type="radio" id="pc-38">
+                                        </label>
+                                        <label class="grey" for="pc-39">
+                                            <input type="radio" id="pc-39">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/deb8591f-ec36-406b-a18c-af69e2f01706/jordan-shoebox-bag-XLnXWD.png">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Jordan Shoebox</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>$26.28</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-40">
+                                            <input type="radio" id="pc-40">
+                                        </label>
+                                        <label class="active black" for="pc-41">
+                                            <input type="radio" id="pc-41">
+                                        </label>
+                                        <label class="grey" for="pc-42">
+                                            <input type="radio" id="pc-42">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product__pagination">
+                                <a class="active" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <span>...</span>
+                                <a href="#">21</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="https://pngimage.net/wp-content/uploads/2018/06/white-nike-logo-png-6.png" alt=""></a>
+                        </div>
+                        <p>Nike. Just Do It.</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Clothing Store</a></li>
+                            <li><a href="#">Trending Shoes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Delivary</a></li>
+                            <li><a href="#">Return & Exchanges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | NIKE STORE <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> 
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

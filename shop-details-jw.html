@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="#"><img src="img/icon/heart.png" alt=""></a>
+            <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Free shipping, 30-day return or refund guarantee.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="#">Sign in</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>Usd <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>USD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="data:image/png;base64,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" alt="" style="margin-left:2px; "  height="40px" width="110px"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="./shop.html">Shop</a></li>
+                           
+                            
+                            <li><a href="./contact.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                        <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                        <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                        <div class="price">$0.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Shop Details Section Begin -->
+    <section class="shop-details">
+        <div class="product__details__pic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product__details__breadcrumb">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <span>Product Details</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
+                                    <div class="product__thumb__pic set-bg" data-setbg="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f94cb12c-d676-45bf-8cd5-2200d8de14e0/jordan-essentials-fleece-hoodie-T5prGq.png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
+                                    <div class="product__thumb__pic set-bg" data-setbg="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/bee97461-3102-4622-b46e-d69f34eb268d/jordan-essentials-fleece-hoodie-T5prGq.png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
+                                    <div class="product__thumb__pic set-bg" data-setbg="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3c0c73a9-b3bb-4e11-94c8-c03a4331557e/jordan-essentials-fleece-hoodie-T5prGq.png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
+                                    <div class="product__thumb__pic set-bg" data-setbg="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2f15c6c7-a9e9-49da-a5a1-8c6b0f185046/jordan-essentials-fleece-hoodie-T5prGq.png">
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="product__details__pic__item">
+                                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f94cb12c-d676-45bf-8cd5-2200d8de14e0/jordan-essentials-fleece-hoodie-T5prGq.png" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="product__details__pic__item">
+                                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/bee97461-3102-4622-b46e-d69f34eb268d/jordan-essentials-fleece-hoodie-T5prGq.png" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <div class="product__details__pic__item">
+                                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3c0c73a9-b3bb-4e11-94c8-c03a4331557e/jordan-essentials-fleece-hoodie-T5prGq.png" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                <div class="product__details__pic__item">
+                                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2f15c6c7-a9e9-49da-a5a1-8c6b0f185046/jordan-essentials-fleece-hoodie-T5prGq.png" alt="">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__details__content">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="product__details__text">
+                            <h4>Jordan Women's Fleece Hoodie</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span> - 5 Reviews</span>
+                            </div>
+                            <h3>$70.00</h3>
+                            <p>Everyone needs a hoodie that can be pulled on easily and goes with almost anything.The Jordan Essentials Fleece Hoodie ticks all of the boxes.It's made from heavyweight brushed fleece with a loose fit, giving it a roomy and robust feel.</p>
+                            <div class="product__details__option">
+                                <div class="product__details__option__size">
+                                    <span>Size:</span>
+                                    <label for="xl">xxl
+                                        <input type="radio" id="xl">
+                                    </label>
+                                    <label class="active" for="l">l
+                                        <input type="radio" id="l">
+                                    </label>
+                                    <label for="m">m
+                                        <input type="radio" id="m">
+                                    </label>
+                                    <label for="sm">s
+                                        <input type="radio" id="sm">
+                                    </label>
+                                </div>
+                                <div class="product__details__option__color">
+                                    <span>Color:</span>
+                                    <label class="c-1" for="sp-1">
+                                        <input type="radio" id="sp-1">
+                                    </label>
+                                    <label class="c-2" for="sp-2">
+                                        <input type="radio" id="sp-2">
+                                    </label>
+                                    <label class="c-3" for="sp-3">
+                                        <input type="radio" id="sp-3">
+                                    </label>
+                                    <label class="c-4" for="sp-4">
+                                        <input type="radio" id="sp-4">
+                                    </label>
+                                    <label class="c-9" for="sp-9">
+                                        <input type="radio" id="sp-9">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="product__details__cart__option">
+                                <div class="quantity">
+                                    <div class="pro-qty">
+                                        <input type="text" value="1">
+                                    </div>
+                                </div>
+                                <a href="#" class="primary-btn">add to cart</a>
+                            </div>
+                            <div class="product__details__btns__option">
+                                <a href="#"><i class="fa fa-heart"></i> add to wishlist</a>
+                                <a href="#"><i class="fa fa-exchange"></i> Add To Compare</a>
+                            </div>
+                            <div class="product__details__last__option">
+                                <h5><span>Guaranteed Safe Checkout</span></h5>
+                                <img src="img/shop-details/details-payment.png" alt="">
+                                <ul>
+                                    <li><span>SKU:</span> 3812912</li>
+                                    <li><span>Categories:</span> Clothes</li>
+                                    <li><span>Tag:</span> Clothes, Skin, Body</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product__details__tab">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-5"
+                                    role="tab">Description</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">Customer
+                                    Previews(5)</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-7" role="tab">Additional
+                                    information</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tabs-5" role="tabpanel">
+                                    <div class="product__details__tab__content">
+                                        <p class="note">Product Details
+                                        <ul>
+                                           <li> Jordan Loose fit
+                                            <li> Kangaroo pocket
+                                                <li> Elastic cuffs and hem
+                                                    <li> Woven label
+                                                        <li> Body/Hood Lining: 100% cotton.
+                                                            <li> Machine wash
+                                                                <li> Imported
+                                                                    <li> Colour Shown: White Onyx
+                                                                        <li>Style: DD6998-268</p>
+                                                                        </ul>                                    
+                                        <div class="product__details__tab__content__item">
+                                            <h5>Products Infomation</h5>
+                                            <p>COSY ALL DAY.
+
+
+                                                Everyone needs a hoodie that can be pulled on easily and goes with almost anything.The Jordan Essentials Fleece Hoodie ticks all of the boxes.It's made from heavyweight brushed fleece with a loose fit, giving it a roomy and robust feel.</p>
+                                          
+                                        </div>
+                                        <div class="product__details__tab__content__item">
+                                            <h5>Size and Fit</h5>
+                                            <p>Size & Fit
+                                               <ul>
+                                                <li>Model is wearing size S and is 5' 9" (175cm approx.)
+                                                <li>Loose fit for a roomy feel
+                                                <li>Size Guide
+
+                                                </ul>
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tabs-6" role="tabpanel">
+                                    <div class="product__details__tab__content">
+                                        <div class="product__details__tab__content__item">
+                                            <h5>Products Infomation</h5>
+                                            <p>A Pocket PC is a handheld computer, which features many of the same
+                                                capabilities as a modern PC. These handy little devices allow
+                                                individuals to retrieve and store e-mail messages, create a contact
+                                                file, coordinate appointments, surf the internet, exchange text messages
+                                                and more. Every product that is labeled as a Pocket PC must be
+                                                accompanied with specific software to operate the unit and must feature
+                                            a touchscreen and touchpad.</p>
+                                            <p>As is the case with any new technology product, the cost of a Pocket PC
+                                                was substantial during it’s early release. For approximately $700.00,
+                                                consumers could purchase one of top-of-the-line Pocket PCs in 2003.
+                                                These days, customers are finding that prices have become much more
+                                                reasonable now that the newness is wearing off. For approximately
+                                            $350.00, a new Pocket PC can now be purchased.</p>
+                                        </div>
+                                        <div class="product__details__tab__content__item">
+                                            <h5>Material used</h5>
+                                            <p>Polyester is deemed lower quality due to its none natural quality’s. Made
+                                                from synthetic materials, not natural like wool. Polyester suits become
+                                                creased easily and are known for not being breathable. Polyester suits
+                                                tend to have a shine to them compared to wool and cotton suits, this can
+                                                make the suit look cheap. The texture of velvet is luxurious and
+                                                breathable. Velvet is a great choice for dinner party jacket and can be
+                                            worn all year round.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tabs-7" role="tabpanel">
+                                    <div class="product__details__tab__content">
+                                        <p class="note">Nam tempus turpis at metus scelerisque placerat nulla deumantos
+                                            solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis
+                                            ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo
+                                        pharetras loremos.</p>
+                                        <div class="product__details__tab__content__item">
+                                            <h5>Products Infomation</h5>
+                                            <p>A Pocket PC is a handheld computer, which features many of the same
+                                                capabilities as a modern PC. These handy little devices allow
+                                                individuals to retrieve and store e-mail messages, create a contact
+                                                file, coordinate appointments, surf the internet, exchange text messages
+                                                and more. Every product that is labeled as a Pocket PC must be
+                                                accompanied with specific software to operate the unit and must feature
+                                            a touchscreen and touchpad.</p>
+                                            <p>As is the case with any new technology product, the cost of a Pocket PC
+                                                was substantial during it’s early release. For approximately $700.00,
+                                                consumers could purchase one of top-of-the-line Pocket PCs in 2003.
+                                                These days, customers are finding that prices have become much more
+                                                reasonable now that the newness is wearing off. For approximately
+                                            $350.00, a new Pocket PC can now be purchased.</p>
+                                        </div>
+                                        <div class="product__details__tab__content__item">
+                                            <h5>Material used</h5>
+                                            <p>Polyester is deemed lower quality due to its none natural quality’s. Made
+                                                from synthetic materials, not natural like wool. Polyester suits become
+                                                creased easily and are known for not being breathable. Polyester suits
+                                                tend to have a shine to them compared to wool and cotton suits, this can
+                                                make the suit look cheap. The texture of velvet is luxurious and
+                                                breathable. Velvet is a great choice for dinner party jacket and can be
+                                            worn all year round.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Details Section End -->
+
+    <!-- Related Section Begin -->
+    <section class="related spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="related-title">Related Product</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                            <span class="label">New</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Piqué Biker Jacket</h6>
+                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$67.24</h5>
+                            <div class="product__color__select">
+                                <label for="pc-1">
+                                    <input type="radio" id="pc-1">
+                                </label>
+                                <label class="active black" for="pc-2">
+                                    <input type="radio" id="pc-2">
+                                </label>
+                                <label class="grey" for="pc-3">
+                                    <input type="radio" id="pc-3">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Piqué Biker Jacket</h6>
+                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$67.24</h5>
+                            <div class="product__color__select">
+                                <label for="pc-4">
+                                    <input type="radio" id="pc-4">
+                                </label>
+                                <label class="active black" for="pc-5">
+                                    <input type="radio" id="pc-5">
+                                </label>
+                                <label class="grey" for="pc-6">
+                                    <input type="radio" id="pc-6">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
+                    <div class="product__item sale">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                            <span class="label">Sale</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Multi-pocket Chest Bag</h6>
+                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$43.48</h5>
+                            <div class="product__color__select">
+                                <label for="pc-7">
+                                    <input type="radio" id="pc-7">
+                                </label>
+                                <label class="active black" for="pc-8">
+                                    <input type="radio" id="pc-8">
+                                </label>
+                                <label class="grey" for="pc-9">
+                                    <input type="radio" id="pc-9">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Diagonal Textured Cap</h6>
+                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$60.9</h5>
+                            <div class="product__color__select">
+                                <label for="pc-10">
+                                    <input type="radio" id="pc-10">
+                                </label>
+                                <label class="active black" for="pc-11">
+                                    <input type="radio" id="pc-11">
+                                </label>
+                                <label class="grey" for="pc-12">
+                                    <input type="radio" id="pc-12">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Section End -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="https://pngimage.net/wp-content/uploads/2018/06/white-nike-logo-png-6.png" alt=""></a>
+                        </div>
+                        <p>Nike. Just Do It.</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Clothing Store</a></li>
+                            <li><a href="#">Trending Shoes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Delivary</a></li>
+                            <li><a href="#">Return & Exchanges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | NIKE STORE <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> 
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
